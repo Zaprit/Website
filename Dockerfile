@@ -1,4 +1,4 @@
-FROM go:latest
+FROM golang:latest
 
 # Create app directory
 WORKDIR /go/src/abyss
