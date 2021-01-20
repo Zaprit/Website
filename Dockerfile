@@ -12,4 +12,4 @@ COPY . .
 
 
 # run the app
-CMD ["revel", "-a", "."]
+CMD ["/go/bin/revel", "run", "-a", "."]
