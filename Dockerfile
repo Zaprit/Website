@@ -11,9 +11,9 @@ RUN go get github.com/revel/cmd/revel
 COPY . source
 
 RUN revel build source tmp -m prod
+RUN rm -rf source
 RUN mv tmp/* .
 RUN rm -rf tmp
-RUN rm -rf source
 
 # run the app
 CMD ["./run.sh"]
