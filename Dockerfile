@@ -8,12 +8,12 @@ RUN go get github.com/revel/cmd/revel
 
 
 # Bundle app source
-COPY . src
+COPY . source
 
-RUN revel build ./src ./tmp -m prod
+RUN revel build ./source ./tmp -m prod
 RUN mv tmp/* .
 RUN rm -rf tmp
-RUN rm -rf src
+RUN rm -rf source
 
 # run the app
 CMD ["./run.sh"]
