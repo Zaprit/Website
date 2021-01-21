@@ -1,0 +1,29 @@
+{{set . "title" "Status"}}
+{{template "header.html" .}}
+<div class="container text-white mt-2" style="background-color: black; box-shadow: 0 8px 15px black; border-radius: 3px 3px;">
+    <p>
+        At the moment there are no prebuilt binaries for the Abyss Engine so you will have to build it yourself
+
+        To build it yourself you will need the go runtime, you can get it <a href="https://golang.org/dl">here</a>.
+        Once you have the go engine you will need to get the Abyss Source to do that run:
+        <pre>
+            <code>
+                go get github.com/OpenDiablo2/AbyssEngine
+                cd AbyssEngine
+            </code>
+        </pre>
+        Then to get the dependencies run:
+        <pre>
+            <code>
+                go get -d
+            </code>
+        </pre>
+        Finally to run Abyss Engine:
+        <pre>
+            <code>
+                go run .
+            </code>
+        </pre>
+    </p>
+</div>
+{{template "footer.html" .}}

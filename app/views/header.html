@@ -34,10 +34,10 @@
               {{else}}
               <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
               {{end}}
-              {{if eq .title "About"}}
-              <li class="nav-item active"><span class="nav-link">About <span class="sr-only">(current)</span></a></li>
+              {{if eq .title "Status"}}
+              <li class="nav-item active"><span class="nav-link">Status <span class="sr-only">(current)</span></a></li>
               {{else}}
-              <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="/status" class="nav-link">Status</a></li>
               {{end}}
               {{if eq .title "Online"}}
               <li class="nav-item active"><span class="nav-link">Online <span class="sr-only">(current)</span></a></li>
@@ -54,6 +54,7 @@
               {{else}}
               <li class="nav-item"><a href="/download" class="nav-link">Download</a></li>
               {{end}}
+              <li class="nav-item"><a href="https://github.com/OpenDiablo2/AbyssEngine">Repo</a></li>
             </ul>
           </div>
         </div>
