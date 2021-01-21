@@ -10,7 +10,7 @@ RUN go get github.com/revel/cmd/revel
 # Bundle app source
 COPY . source
 
-RUN revel build ./source ./tmp -m prod
+RUN revel build source tmp -m prod
 RUN mv tmp/* .
 RUN rm -rf tmp
 RUN rm -rf source
