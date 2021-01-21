@@ -1,14 +1,7 @@
-.img-bg {
-    
+body {
+    background-image: url("/public/img/background.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    filter: blur(4px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -100;
-    height: 100%;
-    width: 100%;
   }
